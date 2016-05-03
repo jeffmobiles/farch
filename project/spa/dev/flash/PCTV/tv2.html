@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html>
+
+<head>
+    <title>悉尼FC&nbsp;&nbsp;VS&nbsp;&nbsp;浦项制铁 — 足球视频 — 一比分</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <base href="http://tv.13322.com:80/" />
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="expires" content="0">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <script type="text/javascript">
+        var version = '1.2.7';
+        var oddsUrl = 'http://odds.13322.com/';
+        var liveUrl = 'http://live.13322.com/';
+        var dataUrl = 'http://data.13322.com/';
+        var tvUrl = 'http://tv.13322.com/';
+        var homeUrl = 'http://www.13322.com/';
+        var oddsBase = '/';
+        var liveBase = '/';
+        var dataBase = '/';
+        var tvBase = '/';
+        var homeBase = '/';
+    </script>
+
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+
+    <!-- baidu统计 -->
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7e0e97d55c38140b47257ebcd8d2ed71";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script type='text/javascript'>
+        /*    window._CWiQ = window._CWiQ || [];
+         window.BX_CLIENT_ID = 37039; // 帐号ID
+         var i = 0;
+         (function () {
+         var c = document.createElement('script')
+         , p = 'https:' == document.location.protocol;
+         c.type = 'text/javascript';
+         c.async = true;
+         c.src = (p ? 'https://' : 'http://') + 'tp.ana.pjdsp.com/boot/0';
+         var h = document.getElementsByTagName('script')[0];
+         h.parentNode.insertBefore(c, h);
+         })();*/
+        /**
+         head标签内增加渠道统计代码
+         通过渠道推广访问一个页面后，再访问其他页面都要加上渠道参数
+         代码安装好后 测试访问地址 http://ck.13322win.com
+         */
+        /*    (function() {
+         var hm_t = document.createElement("script");
+         hm_t.setAttribute('id', 'hmw3g9kd4kx8yqgo');
+         hm_t.src = "http://union.13322.com/traffic/scripts/traffic.js?v=1&vnp56ams";
+         var s_t = document.getElementsByTagName("script")[0];
+         s_t.parentNode.insertBefore(hm_t, s_t);
+         })();*/
+        /* $(document).ready(function(){
+         console.log(window.location.href)
+         var paramStr=location.href.substring(location.href.indexOf("?"));
+         $("a").each(function(){
+         $(this).attr("href",$(this).attr("href")+paramStr);
+         })
+         });*/
+    </script>
+    <link rel="shortcut icon" href="favicon.ico" type="/image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/header_zh.css">
+    <link rel="stylesheet" type="text/css" href="/css/video/livetv.css">
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/video/jquery.mCustomScrollbar.css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".tv-table>tbody>tr:even").addClass("sg-td");
+            $(".tv-table>tbody>tr:odd").addClass("db-td");
+
+            var videoStr='http://player.pptv.com/v/wy29OqIIeLYZlic8.swf';
+            $("#videoP").append(videoStr);
+        });
+
+        //内容头部导航
+        $(function () {
+            var index = 0;
+            $(".menu-nav li").click(function () {  //mousemove 点击或移动
+                index = $(".menu-nav li").index(this);
+                $(this).addClass("active").siblings().removeClass("active");
+                //$(".content_div .news_div").eq(index).show().siblings().hide();
+            });
+
+
+            $(".playbox-list li").click(function () {  //mousemove 点击或移动
+                index = $(".playbox-list li").index(this);
+
+                $(this).addClass("active").siblings().removeClass("active");
+                $("#objVideo").empty();
+                $("#videoHtitle").empty();
+
+                var titleStr = "";
+                titleStr += $(this).find("input:eq(1)").val();
+                $("#videoHtitle").append(titleStr);
+
+                var str = "";
+                str += "<param name=\"allowfullscreen\" value=\"true\">" +
+                        "<param name=\"movie\" value=\"" + $(this).find("input:eq(0)").val() + "\"" +
+                        "<param name=\"quality\" value=\"High\">" +
+                        "<param name=\"wmode\" value=\"opaque\">" +
+                        "<param name=\"allowscriptaccess\" value=\"always\">" +
+                        "<embed id=\"11815_swf\" src=\"" + $(this).find("input:eq(0)").val() + "\" quality=\"High\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" wmode=\"opaque\" allowscriptaccess=\"always\" allowfullscreen=\"true\" height=\"100%\" width=\"100%\">";
+                $("#objVideo").append(str);
+            });
+        });
+
+    </script>
+
+    <style type="text/css">
+        .more-tv,.homelook {
+            behavior: url(ie-css3.htc);
+        }
+        .homelook{ float:right; width:90px;height:24px; line-height:24px;text-align: center; background-color:#2c9be9; color:#fff; font-size:12px;font-weight:normal; margin-top:5px;-ms-border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+        .homelook:hover{ color:yellow;}
+        .speakdiv{ height:0px;position:relative; line-height:0px;}
+        .speakBox{width:410px;position: absolute;bottom:12px;left:50%; margin-left:-205px;}
+    </style>
+</head>
+
+<body style="background: #090a0a url(/img/video/footballodds-bg.jpg) no-repeat center top;">
+
+
+
+<header class="header">
+
+
+
+    <style type="text/css">
+
+        .adpos {
+            width: 1000px;
+            margin: auto;
+            position: relative;
+            top: 10px
+        }
+
+        .adpos_l {
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            margin-left: -605px;
+            top: 0;
+        }
+
+        .adpos_r {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            width: 100px;
+            margin-right: -605px;
+        }
+
+        .adpic {
+            position: relative;
+            width: 100px;
+            height: 120px;
+            margin-bottom: 5px;
+        }
+
+        .adlink {
+            position: absolute;
+            width: 60px;
+        }
+
+        .adlink .linka {
+            height: 45px;
+            width: 100px;
+            display: block;
+            cursor: pointer;
+            margin: 10px 0 5px;
+            text-indent: -1000px;
+            overflow: hidden;
+            filter: Alpha(opacity=0);
+            -moz-opacity: 0;
+            opacity: 0;
+            background-color: #0000FF
+        }
+
+        .adlink .pic {
+            height: 120px;
+        }
+
+        .speak{ height: 1px; position:relative; overflow: hidden;}
+
+    </style>
+    <script>
+        var i18n = {
+            gameOver: "完",
+            midfield: "中",
+            Pending: "待定",
+            Putoff: "推迟",
+            Cancel: "取消",
+            Cut: "腰斩",
+            Seal: "封",
+            Interrupt: "中断",
+            Rounds: "轮次",
+            Trend: "盘路",
+            Against: "对手",
+            NoDiff: "无相差",
+
+            LiveVideo: "视频直播",
+            EventDisplay: "赛事动画",
+            MoreChannels: "更多频道",
+            packup: "收起",
+
+            analyze: "析",
+            europe: "欧",
+            asia: "亚",
+            big: "大",
+            over: "大",
+            under: "小",
+            shareOn: "分享到",
+            matchCut: "腰斩",
+            matchPutOff: "推迟",
+
+            Ball: '球',
+            Field: '场',
+            Finished: '已比赛',
+            HomeWinGames: '主胜总场次',
+            DrawGames: '平局总场次',
+            AwayWinGames: '客胜总场次',
+            TotalGoals: '总进球数',
+            AvgGoals: '场均总进球数',
+            AvgHomeGoals: '主场场均进球',
+            AvgAwayGoals: '客场场均进球数',
+            overHalf: '高于0.5球',
+            overOneHalf: '高于1.5球',
+            overTwoHalf: '高于2.5球',
+            overThreeHalf: '高于3.5球',
+            analy: '析',
+            win: '胜',
+            draw: '平',
+            lose: '负',
+            Recently: '最近',
+            Farthest: '最远',
+            NearFight: '近{0}场战绩',
+            Get: '得',
+            Miss: '失',
+            ENG_PR: '英超',
+            ITA_D1: '意甲  ',
+            SPA_D1: '西甲',
+            GER_D1: '德甲',
+            FRA_D1: '法甲',
+            WPan: '赢盘',
+            DPan: '走盘',
+            LPan: '输盘',
+            'L1/2': '输半',
+            'W1/2': '赢半',
+            score: '比分',
+            RoundNum: '第{0}轮',
+            MatchesWin: '比赛{0}场 胜{1}场',
+            MatchesDraw: '比赛{0}场 平{1}场',
+            MatchesLose: '比赛{0}场 负{1}场',
+            TotalStandings: '总积分榜',
+            All: '全部',
+            Home: '主场',
+            Away: '客场',
+            Season: '赛季',
+            FirstCorner: '得第一个角球次数',
+            FirstGoal: '入第一个进球次数',
+            Match: '比赛',
+            FT: '全场',
+            HT: '半场',
+            Goal: '进球',
+            RangPing: '平手',
+            RangPingBan: '平/半',
+            RangBan: '半球',
+            RangBanYi: '半/一',
+            RangYi: '一球',
+            RangYiQiuBan: '一/球半',
+            RangQiuBan: '球半',
+            RangQiuBanLiangQiu: '球半/两球',
+            RangLiangQiu: '两球',
+            RangLiangLiangQiuBan: '两/两球半',
+            RangLiangQiuBan: '两球半',
+            RangLiangQiuBanSan: '两球半/三',
+            RangSanQiu: '三球',
+            SRangPingBan: '受平/半',
+            SRangBan: '受半球',
+            SRangBanYi: '受半/一',
+            SRangYi: '受一球',
+            SRangYiQiuBan: '受一/球半',
+            SRangQiuBan: '受球半',
+            SRangQiuBanLiangQiu: '受球半/两球',
+            SRangLiangQiu: '受两球',
+            SRangLiangLiangQiuBan: '受两/两球半',
+            SRangLiangQiuBan: '受两球半',
+            SRangLiangQiuBanSan: '受两球半/三',
+            SRangSanQiu: '受三球',
+            FTPlusSpread: '全场受让盘',
+            FTSpread: '全场让分盘',
+            HTSpread: '半场让分盘',
+            HTPlusSpread: '半场受让盘',
+            RangOthers: '其它盘',
+            Total: '总数',
+            GoalMost: '进球最多',
+            MissMost: '失球最多',
+            Probability: '概率',
+            Over: '大',
+            Under: '小',
+            SeeMore: '点击查看显示本轮完整赛程',
+            DataStat: '数据统计',
+            near: '近{0}场',
+            OneHalf: '上半场',
+            TwoHalf: '下半场',
+            Pts: '积分',
+            DQiu: '大球',
+            XQiu: '小球',
+            DCorner: '大角球',
+            XCorner: '小角球',
+            Corner: '角球',
+            DE: '得',
+            SHI: '失',
+            NetW: '净胜',
+            CurPts: '本赛季积分',
+            PtsStat: '积分统计',
+            CurHDP: '本赛季让球盘',
+            HDPStat: '让球统计',
+            CurOU: '本赛季大小球盘',
+            OUStat: '大小球统计',
+            TotAche: '总成绩',
+            HomeAche: '主场成绩',
+            AwayAche: '客场成绩',
+            AllEvent: '全部赛事',
+            HomeEvents: '主场赛事',
+            AwayEvents: '客场赛事',
+            HomeSpread: '主场让分',
+            AwaySpread: '客场让分',
+            Ranking: '排名',
+            Team: '球队',
+            WPer: '胜率',
+            DPer: '平率',
+            LPer: '负率',
+            Get: '得',
+            Lost: '失',
+            Margin: '净胜',
+            ObtAvg: '均得',
+            LosAvg: '均失',
+            TwoHF: '下半场',
+            OneHF: '上半场',
+            StatOver: '大球',
+            StatUnder: '小球',
+            CornerOver: '大角球',
+            CornerUnder: '小角球',
+            //database.1stHT:'database.database.1stHT',
+            Group: '组',
+            GroupPts: '组积分',
+            GroupNote: '备注：球队名称标注红色，代表该球队会晋级',
+            RangOthers: '其它盘',
+            SeeMore: '点击查看显示本轮完整赛程',
+            Zou: '走',
+            FootInfo: '以上资料仅供参考 更新于',
+            Points: '分',
+            Others: '其它',
+            NotOpening: '未开盘',
+            HomeWin: '主胜',
+            HomeLose: '主负',
+            AwayWin: '客胜',
+            AwayLose: '客负',
+            PleaseSelectTeam: '请选择球队',
+            liveVideo: '文字直播',
+            OnLive: '进行中',
+            AgainstTeams: '对阵球队',
+            BroadcastPlatforms: '转播线路',
+            Time: '时间',
+            league: '联赛',
+            Mon: '星期一',
+            Tue: '星期二',
+            Wed: '星期三',
+            Thu: '星期四',
+            Fri: '星期五',
+            Sat: '星期六',
+            Sun: '星期日',
+            tranTyp1: '完全所有',
+            tranTyp2: '租借',
+            tranTyp3: '自由转会',
+            tranTyp4: '租借结束',
+            tranTyp5: '共同所有',
+
+            striker: '前锋',
+            midfielder: '中场',
+            defender: '后卫',
+            goalkeeper: '守门员',
+            leftFoot: '左脚',
+            rightFoot: '右脚',
+            bothFoot: '双脚',
+            chiefCoach: '主教练',
+            handicap: '让球盘',
+            OUBall: '大小球',
+            LiveOdds: '即时盘口',
+            oldVideo: '完场录像',
+            ansLive: '即时',
+            allEvents: '全部赛事',
+            ansRecent: '近 {0} 场',
+            goals: '进球',
+            redcard: '红牌',
+            allMatch: '不分主客',
+        }
+
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("抱歉,此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                    }
+                } else {
+                    alert("抱歉,您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+                }
+            }
+        }
+
+        $(function () {
+            /* $.ajax({
+             type: "POST",
+             url: "core/score.findNotice.do",
+             async: false,
+             success: function (obj, textStatus) {
+             if (obj == null) {
+             return;
+             }
+             var s=document.getElementById('snotice');
+             var t=obj.length;
+
+             for (var i=0;i<t;i++)
+             {
+             var li= document.createElement("li");
+             li.innerHTML='<a href="javascript:void(0)">'+obj[i]["content"]+'</a>';
+             s.appendChild(li);
+             }
+             }
+             });
+
+             var marquee = document.getElementById("marquee");
+             var marquee1 = document.getElementById("marquee1");
+             var marquee2 = document.getElementById("marquee2");
+             marquee2.innerHTML = document.getElementById("marquee1").innerHTML;
+             function Marquee() {
+             if (marquee.scrollLeft - marquee2.offsetWidth >= 0) {
+             marquee.scrollLeft -= marquee1.offsetWidth;
+             }
+             else {
+             marquee.scrollLeft++;
+             }
+             }
+             var myvar = setInterval(Marquee, 30);
+             marquee.onmouseout = function () {
+             myvar = setInterval(Marquee, 30);
+             }
+             marquee.onmouseover = function () {
+             clearInterval(myvar);
+             }*/
+
+            $("[tabId=4]").css({color: "yellow"})
+
+        });
+        function alertMsg() {
+            alert('暂未开放,敬请关注！');
+        }
+
+
+        var pageType = '';
+
+    </script>
+
+    <div class="headtop">
+        <div class="topbd">
+
+            <ul class="head_l">
+                <li class="sethome">
+                    <a href="javascript:void(0)" onclick="SetHome(this,'www.13322.com')"><span
+                            class="home_icon"></span>设为首页</a>
+                </li>
+
+                <li class="phones">
+                    <a><span class="phone_icon"></span><span class="drop_arrow"></span>手机版</a>
+                    <dl class="ph_layer">
+                        <dt style="margin-top:10px"><img src="images/m13322.png"></dt>
+                        <dt>手机看比分,消息最先知</dt>
+                    </dl>
+                </li>
+
+            </ul>
+            <ul class="head_r">
+                <li class="language">
+                    <a class="lg_language flag_zh" href="javascript:void(0)"><span class="drop_arrow"></span>简体中文 <span class="drop_right"></span></a>
+                    <dl class="lg_layer">
+                        <dd><a class="flag_zh"href="http://tv.13322.com/bifen_306066.html">简体中文</a></dd>
+                        <dd><a class="flag_zh_hk"href="http://hk.13322.com/video/bifen_306066.html">繁體中文</a> </dd>
+                    </dl>
+                </li>
+                <li>
+                    <span class="line_y">|</span>
+
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                        <a href="javascript:void(0);" class="jiathis jiathis_txt share">分享 </a>
+                    </div>
+                    <script type="text/javascript">
+
+                        var lang;
+                        if (false) {
+                            lang = "zh";
+                        } else {
+                            lang = 'zh';
+                        }
+                        var appShare = "";
+                        var siteNums = 0;
+                        if (lang != "zh") {
+                            appShare = "twitter,digg,fb,googleplus,linkedin,delicious";
+                            siteNums = 6;
+                        } else {
+                            appShare = "qzone,tsina,weixin,tqq";
+                            siteNums = 4;
+                        }
+                        var urlName = document.URL;
+                        var jiathis_config = {
+                            data_track_clickback: true,
+                            siteNum: siteNums,
+                            sm: appShare,
+                            url: urlName,
+                            summary: "#",
+                            title: document.title,
+                            boldNum: 0,
+                            shortUrl: false,
+                            hideMore: true
+                        }
+                    </script>
+
+                    <script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header_nav">
+        <div class="menu">
+            <a href="http://tv.13322.com/" class="logo"><img alt="一比分" src="/img/logo.png"/></a>
+
+            <div class="nav">
+                <ul>
+
+                    <li>
+                        <a name="topIndex" tabId="1" href="http://www.13322.com/" target="_blank">首页</a>
+                    </li>
+
+                    <li>
+                        <a name="topIndex" tabId="2" href="http://live.13322.com/" target="_blank">足球比分</a>
+
+                    </li>
+
+                    <li>
+                        <a name="topIndex" tabId="7" href="http://live.13322.com/basket" target="_blank">篮球比分</a>
+                    </li>
+                    <li>
+                        <a name="topIndex" tabId="6" href="http://odds.13322.com/" target="_blank">指数中心</a>
+                    </li>
+                    <li>
+                        <a name="topIndex" tabId="3" href="http://data.13322.com/" target="_blank">资料库</a>
+                    </li>
+
+                    <!-- 视频直播 -->
+                    <li>
+                        <!--<a name="topIndex" tabId="4" href="http://tv.13322.com/" target="_blank">视频直播</a>-->
+
+                    </li>
+
+
+
+
+                    <li>
+                        <a name="topIndex" href="http://kj.13322.com/" target="_blank">开奖结果</a>
+                    </li>
+
+                    <li>
+                        <a name="topIndex" href="http://kj.13322.com/trend.html" target="_blank">走势图表</a>
+                    </li>
+
+
+                    <li>
+                        <a name="topIndex" href="http://kf.13322.com/" rel="nofollow" target="_blank">客服系统</a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="js/advertisement.js" type="text/javascript"></script>
+
+
+    <div class="adpos">
+
+        <div class="adpos_l">
+
+        </div>
+
+
+
+        <div class="adpos_r">
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="ad_box" id="topAd">
+
+    </div>
+
+
+
+    <!-- 	  <div class="ad_box">
+              <a href="javascript:void(0)" target="_blank"><img src="img/ad_banner.jpg" width="1000" height="100" /></a>
+          </div> -->
+</header>
+
+<div class="clr divh5"></div>
+
+
+<div class="content-tv">
+    <div class="play-bd">
+        <h2 class="title" id="videoHtitle">
+            <a style="display:none;" href="http://v.pptv.com/show/wy29OqIIeLYZlic8.html" class="homelook" target="_blank" >前往官网观看</a>
+            悉尼FC&nbsp;&nbsp;VS&nbsp;&nbsp;浦项制铁
+        </h2>
+        <!-- type1,web url -->
+       <div style="position:relative;overflow:hidden;height:540px;">
+           <iframe width="960" height="640" style="position:absolute;top:-90px;left:-10px;overflow:hidden;" scrolling="no" frameborder="0" marginwidth="0"
+                   src="http://live.b8b8.tv/watch/4642EFB3321848F028FBB94F49B7550C8B723420BA6B1E47246AD38FCB141D9F14617158001461726600.html" marginheight="0"></iframe>
+       </div>
+
+        <!-- type2 , flash url site,-->
+        <!--<div style="position:relative;overflow:hidden;height:540px;">-->
+            <!--<iframe width="960" height="540" style="position:absolute;overflow:hidden;" scrolling="no" frameborder="0" marginwidth="0"-->
+                    <!--src="http://minisite.letv.com/tuiguang/index.shtml?islive=1&channelId=277&typeFrom=letv_live_360live&ark=100&cid=4&wmode=opaque&prl=0&pay=0&joint=1" marginheight="0"></iframe>-->
+        <!--</div>-->
+
+        <!-- type2 , embed flash
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+                codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10"
+                type="application/x-shockwave-flash" id="objVideo" height="100%" width="100%">
+            <param name="allowfullscreen" value="true">
+            <param name="movie" value="http://player.pptv.com/v/wy29OqIIeLYZlic8.swf">
+            <param name="quality" value="High">
+            <param name="wmode" value="opaque">
+            <param name="allowscriptaccess" value="always">
+            <embed id="11815_swf" src="http://player.pptv.com/v/wy29OqIIeLYZlic8.swf" quality="High" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always"
+                   allowfullscreen="true" height="620" width="100%"></embed>
+        </object> -->
+
+    </div>
+    <div class="speak"></div>
+    <div class="playbox-b-ad"></div>
+</div>
+
+<!--footer开始-->
+<div class="clear"></div>
+
+
+
+<footer class="mar_t15">
+
+
+
+    <div class="ad_box" style="margin-bottom:15px" id="footAd">
+
+    </div>
+
+
+
+
+
+    <script></script>
+
+    <div class="foot_btm">
+        <div class="w1000">
+            <nav id="hotLink">
+
+                <a target="_blank" href="http://www.13322.com/">首页</a> |
+
+                <a target="_blank" href="http://live.13322.com/">足球比分</a> |
+
+
+                <a target="_blank" href="http://live.13322.com/basket">篮球比分</a> |
+
+
+                <a target="_blank" href="http://odds.13322.com/">指数中心</a> |
+                <a target="_blank" href="http://data.13322.com/">资料库</a> |
+                <a target="_blank" href="http://tv.13322.com/">视频直播</a> |
+
+
+                <a target="_blank" href="http://kj.13322.com/">开奖结果</a> |
+                <a target="_blank" href="http://kj.13322.com/trend.html">走势图表</a> |
+                <a target="_blank" href="http://kf.13322.com">客服系统</a> |
+
+
+                <a target="_blank" rel="nofollow" href="http://www.13322.com/about/aboutUs.html">关于乐盈</a>
+            </nav>
+            <div class="icp">ICP主体备案号:<a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">粤ICP备15041803号-1;</a>&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">粤ICP备15041803号-2;</a>&nbsp;&nbsp;版权所有:深圳华海乐盈网络科技有限公司</div>
+            <div class="renzheng">
+                <a target="_blank" href="/identification.htm" class="auth org1" title="可信网站身份验证"><img
+                        src="/img/footer/believable.jpg" alt="可信网站身份验证"></a>
+                <a target="_blank" href="http://ec.eqixin.com/?sn=QX1172830231601453886313" class="auth org2"
+                   rel="nofollow" title="企业信用网站验证"><img src="/img/footer/footer2.jpg" alt="企业信用网站验证"></a>
+                <a target="_blank" href="http://www.itrust.org.cn/Home/Index/itrust_certifi?wm=1266776797"
+                   class="auth org3" rel="nofollow" title="网信认证-企业信用评级"><img src="/img/footer/footer3.jpg"
+                                                                             alt="网信认证-企业信用评级"></a>
+                <a target="_blank" href="http://szcert.ebs.org.cn/c5185776-4ece-45e1-afa9-ae61b25bd835"
+                   class="auth org3" rel="nofollow" title="网上交易保障中心"><img src="/img/newGovIcon.gif" width="106px"
+                                                                          height="39px"
+                                                                          alt="工商网监电子标识"></a><!--
+                <script id="ebsgovicon"
+                        src="http://szcert.ebs.org.cn/govicon.js?id=c5185776-4ece-45e1-afa9-ae61b25bd835&width=105&height=39&type=2"
+                        type="text/javascript"  charset="utf-8"></script>
+                --></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!--footer结束-->
+</body>
+</html>

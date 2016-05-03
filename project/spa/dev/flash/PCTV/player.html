@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>视频直播</title>
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/livetv.css">
+<link type="text/css" rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/gotop.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tv-table>tbody>tr:even").addClass("sg-td"); 
+		$(".tv-table>tbody>tr:odd").addClass("db-td");
+	});
+	//内容头部导航
+	$(function(){
+		var index = 0;  
+		$(".menu-nav li").click(function(){  //mousemove 点击或移动
+			index = $(".menu-nav li").index(this);
+			$(this).addClass("active").siblings().removeClass("active");
+			//$(".content_div .news_div").eq(index).show().siblings().hide();
+		});
+	});
+
+</script>
+</head>
+<style type="text/css">
+.more-tv,.chattext{behavior:url(ie-css3.htc); position: relative;}
+</style>
+<body  style="background: #090a0a url(img/video/footballodds-bg.jpg) no-repeat center top;">
+<header class="header">
+  <div class="headtop">
+    	<div class="topbd">
+        	<ul class="head_l">
+            	<li class="sethome">
+    				<a><i class="home_icon"></i>设为首页</a>
+                </li>
+                <li class="phones">
+                    <a>
+                        <span class="phone_icon"></span>
+                        <span class="drop_arrow"></span> 手机版
+                    </a>
+                	<dl class="ph_layer">
+                    	<dt style="margin-top:10px"><img src="img/m13322.png"></dt>
+                        <dt>手机看比分,消息最先知</dt>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="head_r">
+            	<li class="language">
+                    <a class="lg_language flag_zh" href=""><span class="drop_arrow"></span>Tiếng Việt</a>
+                    <dl class="lg_layer">
+                    	  <dd><a class="flag_en" href="#">English</a></dd>
+                          <dd><a class="flag_zh" href="#">简体中文</a></dd>
+                          <dd><a class="flag_zh_hk" href="#">繁體中文</a></dd> 
+                          <dd><a class="flag_ko" href="#" >한국어</a></dd>
+                          <dd><a class="flag_vi" href="#" >Tiếng Việt</a></dd>
+                          <dd><a class="flag_th"  href="#">ไทย</a></dd>
+                          <dd><a class="flag_in"  href="#">Indonesia</a></dd>
+                    </dl>
+                </li>
+                <li>
+                	<span class="line_y">|</span>
+                	<div class="jiathis_style">
+                        <a href="http://www.jiathis.com/share?uid=2068887" class="jiathis jiathis_txt share" target="_blank">分享</a>
+                    </div>
+					<script type="text/javascript" >
+                    var jiathis_config={
+                        data_track_clickback:true,
+                        siteNum:4,
+                        sm:"qzone,tsina,weixin,tqq",
+                        url:"live.13322.com",
+                        summary:"一比分网",
+                        title:"一比分网 #一比分网#",
+                        desc:"一比分网 #一比分网#",
+                        boldNum:3,
+                        shortUrl:false,
+                        hideMore:false
+                    }
+                    </script>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2068887" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </li>
+            </ul>
+        </div>
+    </div>
+  <div class="header_nav">
+  	<div class="menu">
+    	<a href="#" class="logo"><img src="img/logo.png" /></a>
+        <div class="nav">
+        	<ul>
+        		<li><a href="index.html">首页</a></li>
+            	<li>
+                	<a href="index.html">即时比分</a>
+                	<div class="supnav">
+                    	<div class="nav_drop"></div>
+                        <dl>
+
+                                <dd><a href="#">足球</a></dd>
+                                <dd><a href="#">篮球</a></dd>
+                                <dd><a href="#">板球</a></dd>
+                                <dd><a href="#">斯诺克</a></dd>
+                                <dd><a href="#">排球</a></dd>
+                                <dd><a href="#">赛车</a></dd>
+                                <dd><a href="#">棒球</a></dd>
+                                <dd><a href="#">乒乓球</a></dd>
+                                <dd><a href="#">冰球</a></dd>
+                                <dd><a href="#">羽毛</a></dd>
+                                <dd><a href="#">网球</a></dd>
+                                <dd><a href="#">美式足球</a></dd>
+                           	
+                        </dl>
+                    </div>
+                </li>
+            	<li>
+                	<a href="kaijiang.html">彩票开奖</a>
+                    <div class="supnav">
+                    	<div class="nav_drop"></div>
+                        <dl>
+
+                                <dd><a href="#">竞彩足球</a></dd>
+                                <dd><a href="#">北京单场</a></dd>
+                                <dd><a href="#">传统足球</a></dd>
+                                <dd><a href="#">双色球</a></dd>
+                                <dd><a href="#">大乐透</a></dd>
+                                <dd><a href="#">福彩3D</a></dd>
+                                <dd><a href="#">排列三</a></dd>
+                                <dd><a href="#">七乐彩</a></dd>
+                                <dd><a href="#">七星彩</a></dd>
+                                <dd><a href="#">时时彩</a></dd>
+                                <dd><a href="#">11运夺金</a></dd>
+                                <dd><a href="#">全国开奖</a></dd>
+
+                        </dl>
+                    </div>
+                </li>
+            	<li>
+                	<a href="scoreOdds.html">指数中心</a>
+                    <div class="supnav">
+                    	<div class="nav_drop"></div>
+                        <dl>
+
+                                <dd><a href="#">足球指数</a></dd>
+                                <dd><a href="#">必发指数</a></dd>
+                                <dd><a href="#">澳彩盘口</a></dd>
+                                <dd><a href="#">足球百家</a></dd>
+                                <dd><a href="#">让球盘路</a></dd>
+                              	<dd><a href="#">冠军指数</a></dd>
+
+                        </dl>
+                    </div>
+                </li>
+            	<li>
+                	<a href="#">资料库</a>
+                    <div class="supnav">
+                    	<div class="nav_drop"></div>
+                        <dl>
+
+                                <dd><a href="#">足球资料库</a></dd>
+                              	<dd><a href="#">篮球资料库</a></dd>
+                             	<dd><a href="#">板球</a></dd>
+                              	<dd><a href="#">斯诺克</a></dd>
+                              	<dd><a href="#">网球</a></dd>
+                              	<dd><a href="#">赛车</a></dd>
+                              	<dd><a href="#">棒球</a></dd>
+                              	<dd><a href="#">美式足球</a></dd>
+                              	<dd><a href="#">英超</a></dd>
+                              	<dd><a href="#">意甲</a></dd>
+                              	<dd><a href="#">德甲</a></dd>
+                              	<dd><a href="#">西甲</a></dd>
+                              	<dd><a href="#">法甲</a></dd>
+                              	<dd><a href="#">欧冠杯</a></dd>
+                              	<dd><a href="#">NBA</a></dd>
+                              	<dd><a href="#">盘路</a></dd>
+                              	<dd><a href="#">转会记录</a></dd>
+                              	<dd><a href="#">世界排名</a></dd>
+
+                        </dl>
+                    </div>
+                </li>
+            	<li>
+                	<a href="#">视频直播</a>
+                    <div class="supnav">
+                    	<div class="nav_drop"></div>
+                        <dl>
+
+                                <dd><a href="#">足球直播</a></dd>
+                                <dd><a href="#">篮球直播</a></dd>
+              					<dd><a href="#">赛事录像</a></dd>
+
+                        </dl>
+                    </div>
+                </li>
+            	
+            </ul>
+        </div>
+        <!--<div class="tel_online">
+        	<i class="Telephone"></i><span>客服电话：400-0000-000</span>
+        </div>-->
+    </div>
+  </div>
+  
+</header>
+<div class="content-tv">
+	<!--<div class="tv-pos">
+          <span>
+              您当前的位置：
+              <a href="#">首页</a> > 
+              <a href="#">比赛直播</a> > 
+              <a href="#">视频锦集</a>
+          </span>
+    </div>-->
+    <div class="play-bd">
+    	<h2 class="title">进球大战！利物浦3比3战平阿森纳</h2>
+        <div class="playbox" >
+           <object width="100%" align="middle" height="100%" id="PPTV_PLAYER1460541766841" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" data="http://player.pplive.cn/live/2.11.3/player4live2.swf">
+           		<param value="always" name="allowScriptAccess">
+           		<param value="true" name="allowFullScreen">
+           		<param value="http://player.pplive.cn/live/2.11.3/player4live2.swf" name="movie">
+           		<param value="high" name="quality">
+           		<param value="transparent" name="wmode" >
+           		<param value="#000000" name="bgcolor">
+           		<param value="pid=11401&amp;api=EVENT_HOST_1460541766842" name="flashvars">
+          		<embed width="100%" align="middle" height="100%" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" name="PPTV_PLAYER1460541766841" quality="high" backgroundcolor="#000000" wmode="transparent" flashvars="pid=11401&amp;api=EVENT_HOST_1460541766842" src="http://player.pplive.cn/live/2.11.3/player4live2.swf"></embed>
+           	
+           </object>
+        </div>
+        
+        <div class="speakPos">
+        	<div class="speakDiv">
+        		<div class="speakMask">
+        			<span class="openbtn">弹幕开</span>
+        			<span class="closebtn">弹幕关</span>
+        		</div>
+        		<div class="speakBox">
+        			<span>
+        				<i class="faceIcon"></i>
+        				<i class="micIcon"></i>
+        			</span>
+        			<input id="speak-ipt" class="speak-ipt" style="color:#ccc" onclick="this.style.color='#fff'" type="text" name="speak" placeholder="发表你的言论吧......">
+        			
+        		</div>
+        		<button type="submit" class="send-ipt" id="send-ipt" onclick="send()" >发送</button>
+        	</div>
+        	<div class="chatRoom mCustomScrollbar" id="chatRoom">
+        		<div class="roombox " id="roombox"></div>
+        	</div>
+        </div>
+        
+        <div class="clear"></div>
+        <div class="playbox-b-ad">
+        	<img src="img/playad.jpg" alt="" />
+        </div>
+    </div>
+</div>
+<!--footer开始-->
+<div class="clear"></div>
+<footer class="mar_t15">
+	<div class="linkbox">
+    	<div class="w1000">
+        	<h2 class="link_tit"><a target="_blank" href="#" rel="nofollow">友链合作></a><span>友情链接</span></h2>
+            <div class="link">
+            	<a href="#">中国体育彩票网</a>
+                <a href="#">中国福利彩票网</a>
+                <a href="#">中国福利彩票网</a>
+                <a href="#">新浪体育</a>
+                <a href="#" >网易体育</a>
+                <a href="#" >搜狐体育</a>
+                <a href="#" >雅虎体育</a>
+                <a href="#" >凤凰体育</a>
+                <a href="#">深圳体彩网</a>	
+                <a href="#">中国体育彩票网</a>
+                <a href="#">中国福利彩票网</a>
+                <a href="#">中国体育彩票网</a>
+                <a href="#">中国福利彩票网</a>
+                <a href="#">中国福利彩票网</a>
+                <a href="#">新浪体育</a>
+                <a href="#" >网易体育</a>
+                <a href="#" >搜狐体育</a>
+                <a href="#" >雅虎体育</a>
+                <a href="#" >凤凰体育</a>
+                <a href="#">深圳体彩网</a>	
+                <a href="#">中国体育彩票网</a>
+                <a href="#">中国福利彩票网</a>
+            </div>
+        </div>
+    </div>
+    <div class="foot_btm">
+    	<div class="w1000">
+        	<nav>
+            	<a href="#">即时比分</a> |
+                <a href="#">彩票开奖</a> |
+                <a href="#">指数中心</a> |
+                <a href="#">联赛资料</a> |
+                <a href="#">视频直播</a> |
+                <a href="#">业务合作</a> |
+                <a href="#">比分调用</a> |
+                <a href="#">关于乐盈</a>
+            </nav>
+            <div class="icp">ICP主体备案号:<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15041803号</a>&nbsp;&nbsp&nbsp;&nbsp; 版权所有:深圳市华海乐盈网络科技有限公司</div>
+            <div class="renzheng">
+                <a href="" class="auth org1" title="网络警察"></a>
+                <a href="" class="auth org2" title="公共信息网络安全监督"></a>
+                <a href="" class="auth org3" title="中国信用企业"></a>
+                <a href="" class="auth org4" title="安全联盟认证"></a>
+                <a href="" class="auth org5" title="网上交易保障中心"></a>
+                <a href="" class="auth org6" title="工商网监电子标识"></a>
+                <a href="" class="auth org7" title="可信网站身份验证 "></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<!-- custom scrollbar plugin -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+	//聊天室自定义滚动条
+    (function($){
+        $(window).load(function(){
+            
+            $("a[rel='load-content']").click(function(e){
+                e.preventDefault();
+                var url=$(this).attr("href");
+                $.get(url,function(data){
+                    $(".chatRoom .mCSB_container").append(data); //load new content inside .mCSB_container
+                    //scroll-to appended content 
+                    $(".chatRoom").mCustomScrollbar("scrollTo","h2:last");
+                });
+            });
+            
+            $(".chatRoom").delegate("a[href='top']","click",function(e){
+                e.preventDefault();
+                $(".chatRoom").mCustomScrollbar("scrollTo",$(this).attr("href"));
+            });
+            
+        });
+    })(jQuery);
+    //发言
+    $(function(){
+    	var oDiv1 = document.getElementById('speak-ipt');
+		var oBtn = document.getElementById('send-ipt');
+		oBtn.onclick = function (){
+			if (oDiv1.value=="") {
+	
+			} 
+			else{
+			$("#chatRoom .roombox").append(
+			 	'<div class="chattext" name="chattext">'+
+			 	'<p>'+'<span>'+'游客：'+'</span>'+ oDiv1.value+'</p>'
+			 	+ 	
+			 	'</div>'
+			);	
+			}
+			document.getElementById("speak-ipt").value="";
+		}
+		 
+	});
+	//弹幕开关
+	$(function(){
+	 	$(".speakMask").click(function(){
+	 		$("#chatRoom").toggle();
+	 		$(this).toggleClass('closeSpeak');
+	 	});
+	})
+</script>
+<script>
+    
+
+
+
+
+</script>
+
+	
+
+</script>
+</body>
+</html>
