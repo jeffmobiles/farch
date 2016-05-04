@@ -1,3 +1,23 @@
+$injector
+angularjs中与DI相关有angular.module()、angular.injector()、 $injector、$provide。
+对于一个DI容器来说，必须具备3个要素：服务的注册、依赖关系的声明、对象的获取。
+angular中，module和$provide相当于是服务的注册；injector用来获取对象（angular会自动完成依赖的注入）；
+依赖关系的声明在angular中有3种方式
+1.angular.module()创建、获取、注册angular中的模块
+2.$provider
+3.3、angular.injector()
+
+angular中三种声明依赖的方式
+// 第一种inference
+injector.invoke(function(myService){alert(myService.my);});
+// 第二种annotation
+function explicit(serviceA) {alert(serviceA.my);};
+explicit.$inject = ['myService'];
+injector.invoke(explicit);
+// 第三种inline
+injector.invoke(['myService', function(serviceA){alert(serviceA.my);}]);
+
+
 function invoke(fn, self, locals, serviceName) {
   if (typeof locals === 'string') {
     serviceName = locals;
