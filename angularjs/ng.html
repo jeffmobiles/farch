@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="ng1.js"></script>
+</head>
+<body  ng-app="myapp" ng-controller="myCon">
+ {{name}}
+ 
+ <script type="text/javascript">
+	var app = angular.module("myapp",[]);
+		app.controller("myCon",function($scope){
+				$scope.name = "welcome my world";
+		});
+ </script>
+</body>
+</html>
