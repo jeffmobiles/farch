@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.min.js">
+
+    </script>
+    <script type="text/javascript">
+        var tasks = function(){
+            alert("执行完毕！");
+            dtd.resolve(); // 改变deferred对象的执行状态
+        };
+        var deferred = jQuery.Deferred();
+
+        var deferred2 = jQuery.Deferred();
+        function fn1 (deferred){
+            var task = function(){
+                        console.log("fn1");
+                         alert(1);
+                        deferred.resolve();
+              };
+            window.setTimeout(task, 3000 );
+            return deferred;
+        }
+
+        function fn2 (deferred){
+            var task = function(){
+                console.log("fn2");
+                alert(2);
+                deferred.resolve();
+            };
+            window.setTimeout( task,2000);
+            return deferred;
+        }
+
+        function fn3 (deferred){
+            var task = function(){
+                console.log("fn3");
+                alert(3);
+                deferred.resolve();
+            };
+            window.setTimeout( task,1000);
+            return deferred;
+        }
+        $.when(fn1(deferred)).done(function(){fn2(deferred2)})
+        .done(function(){fn3(deferred2)});
+    </script>
+</head>
+<body>
+
+</body>
+</html>
