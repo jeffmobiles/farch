@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.min.js">
+
+    </script>
+    <script type="text/javascript">
+        function fn1 (){
+            var deferred = jQuery.Deferred();
+
+            var data = {};
+			data.pageIndex = 1;
+			data.matchStatus = 1;
+			$.ajax({ 
+				url: path + "/findMatchDetailPageList", 
+				data: data, 
+				type:'post',
+				success: function(data){
+					setQueryParam(data);
+					var matchTypeHtml = template('all-league-type',data);
+					$(".condition-list .League-type").empty().html(matchTypeHtml);
+					var html = template('all-league-list-template', data);
+					if(html == null || html == '') {
+						html = "暂无数据";
+					}
+					$("#all-league").empty().html(html);
+					initPage(data.page);
+					//initCompetitionList();
+					initStyle();
+					
+					deferred.resolve();
+				}
+			});
+            return deferred.promise();
+        }
+
+        function fn2 (r){
+			var deferred = jQuery.Deferred();
+			var totalMoney = 0;
+			$.ajax({
+				url : window.GAME.host + window.GAME.service.accountUsableSum,
+				type : "POST",
+				dataType : "json",
+				success : function(r) {
+					if (r.success) {
+						totalMoney = r.obj;
+						//alert("totalMoney="+totalMoney);
+					}
+					deferred.resolve({totalMoney:totalMoney});
+				}
+			});
+            return deferred.promise();
+        }
+
+        function fn3 (r){
+			var deferred = jQuery.Deferred();
+			//初始化总金额
+			cur_totalMoney=r.totalMoney;
+			
+			// 初始化竞猜列表
+			$.ajax({
+				url : window.GAME.host + window.GAME.service.getCompetitionInfo,
+				type : "POST",
+				dataType : "json",
+				data : {},
+				success : function(r) {
+					if (r.success) {
+						//addCompetitionList(eval("(" + r.obj + ")"));
+					}
+				}
+
+			});
+            return deferred.promise();
+        }
+         fn1().then(fn2).then(fn3);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        /**
+         * 为什么jquery1.7.3没有按照顺序来执行. 而jquery2.2.3会安装顺序来执行.
+         * @returns {*}
+         */
+        function fn1 (){
+            var deferred = jQuery.Deferred();
+            console.log("fn1 开始:",deferred.state());
+            var fn1task = function(){
+                 console.log("fn1");
+                 deferred.resolve({result:"我是fn1返回的结果,4秒之后"});
+              };
+            window.setTimeout(fn1task, 4000);
+            return deferred.promise();
+        }
+
+        function fn2 (r){
+            console.log("fn2 开始:获得fn1传过来的参数:",r);
+            var deferred = jQuery.Deferred();
+            console.log("fn2 begin:",deferred.state());
+            var fn2task = function(){
+                console.log("fn2");
+                 deferred.resolve({result:"我是fn2返回的结果,3秒之后"});
+            };
+            window.setTimeout(fn2task,3000);
+            return deferred.promise();
+        }
+
+        function fn3 (r){
+            console.log("fn3 开始:获得fn2传过来的参数:",r);
+            var deferred = jQuery.Deferred();
+            console.log("fn3 begin:",deferred.state());
+            var fn3task = function(){
+                console.log("fn3");
+                 deferred.resolve({result:"我是fn3返回的结果,1秒之后"});
+            };
+            window.setTimeout(fn3task,1000);
+            return deferred.promise();
+        }
+        // 这三行代码没有按照 fn1-->fn2-->fn3 这个顺序》，控制台打印的顺序是fn3,fn2,fn1. fn3=1000,fn2=3000,fn3=4000秒.
+//        fn1();
+//        fn2();
+//        fn3();
+        //下面的代码是按照fn1-->fn2-->fn3 这个顺序执行的, fn1执行完了再执行fn2再执行fn3. 其中result 是在fn函数里的 deferred.resolve({result:"asdfasdf"}); 即如果想传递参数就把参数放入resolve()里。
+//        fn1().then(function(result){
+//            console.log("fn1 result:",result);
+//            fn2().then(function(result2){
+//                console.log("fn2 result",result2);
+//                fn3().then(function(result3){
+//                    console.log("fn3 result",result3);
+//                })
+//            })
+//        })
+         fn1().then(fn2).then(fn3);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
