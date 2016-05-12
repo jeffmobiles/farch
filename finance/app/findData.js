@@ -89,7 +89,7 @@ function caclPower(result){
         page = page -1;
         reqOption = copy(option);
         reqOption.path = option.path + (page);
-        console.log(reqOption.path);
+        //console.log(reqOption.path);
         getHtmlContent(reqOption,caclPower)
     }
     if(page === 1) {
@@ -103,7 +103,7 @@ function caclPower(result){
 /** 根据数据得到某一页的明细.**/
 function getHtmlContent(options,callback){
     var req = http.request(options,function(res){
-        console.log(".........begin......");
+        //console.log(".........begin......");
         var bufferhelper = new BufferHelper();
         res.on("data",function(chunk){
             bufferhelper.concat(chunk);
@@ -127,7 +127,6 @@ function getMultipleHtmlContent(options,callback){
             var bufferhelper = new BufferHelper();
             res.on("data",function(chunk){
                 bufferhelper.concat(chunk);
-                //console.log(bufferhelper.toBuffer());
             });
             res.on("end",function(){
                 var result = iconv.decode(bufferhelper.toString(),"utf-8");
