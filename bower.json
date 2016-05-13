@@ -1,0 +1,23 @@
+{
+  "name": "farch",
+  "description": "front architecture and learn",
+  "main": "index.js",
+  "authors": [
+    "jeff"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "jeff"
+  ],
+  "homepage": "https://github.com/jeffmobiles/farch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "crypto-js": "^3.1.6"
+  }
+}

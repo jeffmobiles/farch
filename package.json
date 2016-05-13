@@ -1,0 +1,35 @@
+{
+  "name": "farch",
+  "version": "1.0.0",
+  "description": "front architecture and learn",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "bufferhelper": "^0.2.1",
+    "fs": "^0.0.2",
+    "csv": "^0.4.6",
+    "cheerio": "^0.20.0",
+    "http": "^0.0.0",
+    "iconv-lite": "^0.4.13",
+    "path": "^0.12.7",
+    "jquery": "^2.2.3",
+    "node-jquery": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffmobiles/farch.git"
+  },
+  "keywords": [
+    "jeff"
+  ],
+  "author": "jeff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffmobiles/farch/issues"
+  },
+  "homepage": "https://github.com/jeffmobiles/farch#readme"
+}

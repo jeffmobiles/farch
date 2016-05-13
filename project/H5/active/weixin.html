@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <script type="text/javascript" src="zepto.js"></script>
+    <script type="text/javascript" src="weixin.js"></script>
+    <script type="text/javascript" src="crypto-js.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class=""></div>
+    <div class=""></div>
+    <div class=""></div>
+</header>
+<section class="content">
+    <button class="button">报名</button>
+</section>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".button").on("click",function(){
+            console.log("报名");
+        })
+    })
+//    weixin.tool.requestAccessToken(weixin.account.test.appid,weixin.account.test.secret);
+</script>
+</body>
+</html>
